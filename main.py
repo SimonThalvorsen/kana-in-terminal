@@ -17,8 +17,7 @@ def oneline():
     print(
         f"You got {len([x for x in open('katakana.txt', encoding='utf8') if x.split()[1] == input(x.split()[0] + '= ')])}/46 correct.") \
         if input("(k)atakana or (h)iragana?\n>").lower() == 'k' else \
-        print(
-            f"You got {len([x for x in open('hiragana.txt', encoding='utf8') if x.split()[1] == input(x.split()[0] + '= ')])}/46 correct.")
+        print(f"You got {len([x for x in open('hiragana.txt', encoding='utf8') if x.split()[1] == input(x.split()[0] + '= ')])}/46 correct.")
 
 
 if __name__ == '__main__':
